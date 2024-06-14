@@ -27,7 +27,7 @@ const verifyJWT = (req, res, next) => {
     })
 }
 
-// MONGO DB ROUTES
+
 
 
 
@@ -44,7 +44,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
     try {
-        // Connect the client to the server	(optional starting in v4.7)
+      
         const database = client.db("sound_safari");
         const userCollection = database.collection("users");
         const classesCollection = database.collection("classes");
