@@ -6,11 +6,11 @@ const stripe = require('stripe')(process.env.PAYMENT_SECRET);
 const cors = require('cors');
 const port = process.env.PORT || 5000;
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-// Middleware
+
 app.use(cors());
 app.use(express.json());
 
-// Routes
+
 // SET TOKEN .
 const verifyJWT = (req, res, next) => {
     const authorization = req.headers.authorization;
